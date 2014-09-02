@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.redapple.android"
+    android:versionCode="3"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+	<uses-permission
+	    
+        android:name="android.permission.INTERNET" />
+	    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+
+    <application
+        android:icon="@drawable/rssicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--   android:name=".ArticleListActivity"-->
+        <activity      
+           android:name="com.yuanwei.android.DrawerExpandableListActivity"
+            android:label="@string/title_article_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <receiver android:name="com.yuanwei.android.AlarmReceiver"></receiver>
+        
+        <receiver android:name="com.yuanwei.android.BootReceiver"
+                android:enabled="false">
+            <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.yuanwei.android.RssDownloadingSchedulingService" />
+        <!-- 
+        <activity
+            android:name="com.redapple.android.ArticleDetailActivity"
+            android:label="@string/title_article_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArticleListActivity" />
+        </activity>
+         -->
+    </application>
+
+</manifest>
