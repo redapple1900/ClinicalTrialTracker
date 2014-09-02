@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_group_row_layout"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#E6E6E6"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context=".ArticleListFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_horizontal" >
+
+        <View
+            android:id="@+id/article_readmarker"
+            android:layout_width="4dp"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/indicator_internal_padding"
+            android:layout_marginTop="10dp"
+            android:background="#B388E3" />
+
+        <TextView
+            android:id="@+id/article_title_text"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="24dip"
+            android:layout_toRightOf="@id/article_readmarker"
+            android:paddingRight="8dip"
+            android:paddingTop="4dip"
+            android:textColor="#383838"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/article_listing_update"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/article_title_text"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="24dip"
+            android:layout_marginTop="3dp"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/article_listing_arthur"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/article_listing_update"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="24dip"
+            android:layout_marginTop="3dp"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <com.yuanwei.android.listview.widget.DontPressWithParentCheckBox
+            android:id="@+id/btn_star"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginRight="3dip"
+            android:button="@drawable/star_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

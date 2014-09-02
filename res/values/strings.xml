@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">Clinical Trial Tracker</string>
+    <string name="title_article_detail">Post Detail</string>
+    <string name="title_article_list">Clinical Trial Tracker</string>
+    <string name="string_synchronized">Synchronized items:</string>
+    <string name="string_failed">No new items synchronized.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!-- Dialog TextView -->
+    <string name="textview_selectphase">Select Phase:</string>
+    <string name="textview_targetsearch">Target Search</string>
+    <string name="string_help">Tips:\n 1.Remove unwanted disease by long pressing it.\n
+        2. Change the syncrhonization time in the menu\'setting\'.\n
+        3. Use adavaced setting to narrow the scope of received trials.</string>
+    <!-- ListView TextView -->
+    <string name="textview_publishedby">Published by:</string>
+    <string name="textview_lastupdated">Last updated:</string>
+
+    <!-- DrawerLayout Button -->
+    <string name="button_addfeed">Add Disease</string>
+    <string name="button_showallitem">Show All Items</string>
+    <string name="button_showstar">Show Highlights</string>
+    <!-- ActionBar Button -->
+    <string name="actionbar_add">Add</string>
+    <string name="actionbar_markallread">Mark all read</string>
+    <string name="actionbar_offline_reading">Save for later</string>
+    <string name="actionbar_unread">Unread Only</string>
+    <string name="actionbar_readall">Read all</string>
+    <string name="actionbar_refresh">Refresh</string>
+    <string name="actionbar_alarm">Setting</string>
+    <string name="actionbar_contact">Contact</string>
+    <string name="actionbar_help">Help</string>
+    
+
+
+</resources>

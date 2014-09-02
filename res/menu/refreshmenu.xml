@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    	06.05  
+    	Remove @add feed from ActionBar
+    	
+		  item android:id="@+id/actionbar_add"
+          android:icon="@drawable/add"
+          android:title="@string/btn_add"
+          android:showAsAction="ifRoom|withText" />
+    -->
+
+
+    <item
+        android:id="@+id/actionbar_markunread1"
+        android:icon="@drawable/unread"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/actionbar_unread"/>
+    <item
+        android:id="@+id/actionbar_markallread1"
+        android:icon="@drawable/readall"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/actionbar_markallread"/>
+        <item
+        android:id="@+id/actionbar_refresh1"
+        android:icon="@drawable/refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/actionbar_refresh"/>
+    <item
+        android:id="@+id/actionbar_alarm"
+        android:icon="@drawable/alarm"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/actionbar_alarm"/>
+    <item
+        android:id="@+id/actionbar_contact"
+        android:showAsAction="never"
+        android:title="@string/actionbar_contact"/>
+    <item
+        android:id="@+id/actionbar_help"
+        android:showAsAction="never"
+        android:title="@string/actionbar_help"/>
+
+</menu>

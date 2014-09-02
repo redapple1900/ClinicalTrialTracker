@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_button">16dp</dimen>
+    <dimen name="margin_horizontal">24dp</dimen>
+    <dimen name="indicator_internal_padding">3dp</dimen>
+</resources>

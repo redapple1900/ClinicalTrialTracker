@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/indicator_internal_padding" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView_searchterms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="25"
+        android:hint="Example:Headache"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="@integer/textline" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_newtrials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="New Trials" />
+
+        <RadioButton
+            android:id="@+id/updatedtrials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Updated Trials" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FF0000"
+        android:padding="3dp"
+        android:showDividers="beginning|middle|end" >
+
+        <Button
+            android:id="@+id/button_Cancel_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/button_Advanced_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="More.." />
+
+        <Button
+            android:id="@+id/Button_OK_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="Add" />
+    </LinearLayout>
+
+</LinearLayout>

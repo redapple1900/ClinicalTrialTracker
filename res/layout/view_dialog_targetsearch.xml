@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+      
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+      <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Conditions" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_interventions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Intervention" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Title" >
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_sponsor_collaborators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Sponser" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_lead_sponsors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Lead" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_study_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Id" />
+    
+
+</LinearLayout>
+  </ScrollView>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:divider="#FF0000"
+        android:padding="3dp"
+        android:showDividers="beginning|middle|end" >
+
+        <Button
+            android:id="@+id/button_Cancel_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/Button_OK_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="Add" />
+    </LinearLayout>
+   </RelativeLayout>

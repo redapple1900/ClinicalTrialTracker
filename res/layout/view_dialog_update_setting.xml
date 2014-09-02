@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <RadioButton
+                android:id="@+id/fixed_intervals_one_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" 
+                android:text="Auto update every day"
+            	android:textSize="16sp"/>
+                
+                      
+            	 <RadioButton
+                android:id="@+id/fixed_intervals_two_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="16sp"
+                android:text="Auto update every other day"/>
+                                                <RadioButton
+                android:id="@+id/fixed_intervals_one_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="16sp"
+                android:text="Auto update every week"/>
+            
+
+        </RadioGroup>
+        <TextView
+          android:id="@+id/textview_update_dialog"
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content"
+          android:text="Please Set the Update Time"
+          android:textSize="16sp"
+          android:layout_marginTop="6dp"
+          android:layout_below="@+id/radioGroup"
+            >
+            
+        </TextView>
+
+
+
+            <TimePicker        
+                 android:id="@+id/timePicker1"
+                android:layout_below="@+id/textview_update_dialog"
+                android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FF0000"
+        android:padding="3dp"
+        android:showDividers="beginning|middle|end" >
+
+        <Button
+            android:id="@+id/button_Cancel_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+
+
+        <Button
+            android:id="@+id/Button_OK_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indicator_internal_padding"
+            android:layout_weight="1"
+            android:text="OK" />
+    </LinearLayout>
+
+</LinearLayout>

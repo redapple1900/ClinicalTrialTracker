@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+        <LinearLayout 
+        android:id="@+id/start_drawer_layout"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFE6E6E6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_addfeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add"
+            android:text="@string/button_addfeed" >
+            
+        </Button>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">          
+        </EditText>
+            <ListView android:id="@+id/start_drawer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+    </LinearLayout>    
+
+</LinearLayout>
